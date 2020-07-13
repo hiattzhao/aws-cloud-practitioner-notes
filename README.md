@@ -240,7 +240,9 @@ Support plans:
 - Enterprise
 
 **AWS Cost Explorer** - custom reports analyze usage and costs
+
 **Total cost of ownership** (TCO) - shows how much it costs to move to AWS instead of on-prem
+
 **AWS organizations** - automate account creation, groups of accounts, policies 
 
 ## Useful Links:
