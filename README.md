@@ -2,53 +2,32 @@
 
 ## 1. Introduction
 **AWS Cloud**: on demand delivery of IT through the internet
-
-Global infrastructure -> Region, Availability Zones, Edge Locations (end points for AWS - cache contents)
-
-
+**Global infrastructure** -> Region, Availability Zones, Edge Locations (end points for AWS - cache contents)
 
 AWS Interfaces (references the AWS API):
+- AWS Management Console - graphical
+- CLI - programming language agnostic
+- SDKs - in existing apps (Infrastructure as code)
 
-AWS Management Console - graphical
-CLI - programming language agnostic
-SDKs - in existing apps (Infrastructure as code)
-
-
-IAM - Identity Access Management
-
-
+**IAM** - Identity Access Management
 
 3 types of cloud deployment:
-
-Public
-Hybrid
-Private (on prem)
-
+- Public
+- Hybrid
+- Private (on prem)
 
 Cloud computing models:
-
-IaaS (EC2)
-PaaS (Elastic Beanstalk)
-Saas
-
+- IaaS (EC2)
+- PaaS (Elastic Beanstalk)
+- Saas
 
 Cloud: low cost, low risk
-
-
-
-Reduce risk - agile
-
-Scalability - resize resources
-
-Agility - speed, experimentation, innovation
-
-Elasticity - scale up or down - autoscaling, Elastic Load Balancing
-
-Reliability - AWS regions - availability zones with data centers, Fault tolerance - system still runs if something fails
-
-Security - continual monitoring, staffed 24/7, multi factor authorization, multi region
-
-
+1. Reduce risk - agile
+2. Scalability - resize resources
+3. Agility - speed, experimentation, innovation
+4. Elasticity - scale up or down - autoscaling, Elastic Load Balancing
+5. Reliability - AWS regions - availability zones with data centers, Fault tolerance - system still runs if something fails
+6. Security - continual monitoring, staffed 24/7, multi factor authorization, multi region
 
 ## 2. AWS Core Services
 EC2 - Elastic Compute Cloud
