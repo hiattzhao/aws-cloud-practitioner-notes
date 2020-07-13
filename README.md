@@ -50,7 +50,7 @@ Security - continual monitoring, staffed 24/7, multi factor authorization, multi
 
 
 
-2. AWS Core Services
+## 2. AWS Core Services
 EC2 - Elastic Compute Cloud
 
      Instances - pay as you go, broad selection of hardware/software (server, virtual machine), global hosting 
@@ -128,7 +128,7 @@ NAT Gateway
 NACL - Network Access Control List
 
 
-3. Integrated Services
+## 3. Integrated Services
 Application Load Balancer
 
 Classic load balancer
@@ -229,7 +229,7 @@ Cloud Formation - simplify repeated tasks
 
 
 
-4. Architecture
+## 4. Architecture
 Well-architected framework
 
 5 Design/Pillar principles
@@ -258,7 +258,7 @@ Autoscaling - adjust/modify resources with changes in demand
 CloudWatch - statistic gathering system, used with autoscaling 
 
 
-5. Security
+## 5. Security
 AWS Cloud HSM - hardware based encryption
 
 
@@ -305,7 +305,7 @@ AWS Shield:
 
 
 
-6. Pricing and Support
+## 6. Pricing and Support
 Reserve instances:
 
      AVRI - All up front (largest discount)
