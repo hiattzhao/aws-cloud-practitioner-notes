@@ -1,7 +1,7 @@
 # Notes for the AWS Cloud Practitioner Exam 2020
 
 ## 1. Introduction
-AWS Cloud: on demand delivery of IT through the internet
+**AWS Cloud**: on demand delivery of IT through the internet
 
 Global infrastructure -> Region, Availability Zones, Edge Locations (end points for AWS - cache contents)
 
