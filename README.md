@@ -91,104 +91,64 @@ Per object access - access control list
 
 ## 3. Integrated Services
 Application Load Balancer
-
-Classic load balancer
-Elastic load balancer - configure routing to applications (listeners, target, target group)
+- Classic load balancer
+- **Elastic load balancer** - configure routing to applications (listeners, target, target group)
 Use containers to host microservices 
-Features
-Support protocols
-CloudWatch metrics
-Access logs
-Health checks
-Path and host-based routing
-IPv6 support
-Dynamic Ports
-AWS
+Features:
+- Support protocols
+- CloudWatch metrics
+- Access logs
+- Health checks
+- Path and host-based routing
+- IPv6 support
+- Dynamic Ports
 
+**Autoscaling** - ensure you have the correct number of EC2 instances, adjust capacity as needed
+Scalability and automation
+  1 Launch configuration (what) --> 2 Autoscaling group (where) --> 3 Autoscaling policy (when)
 
-Autoscaling - ensure you have the correct number of EC2 instances, adjust capacity as needed
+  Dynamic autoscaling: Elastic Load Balancing --> CloudWatch --> Autoscaling
 
-     Scalability and automation
+**Route 53** (DNS service) - translate a URL to an IP address
+- Hosted zone
+- Record Set - subdomain creation
+- DNS resolution strategies
+  Simple Routing, Geo-location, Failover
+  Weighted round robin, latency-based, multivalue answer
 
-     1. Launch configuration (what) --> 2. Autoscaling group (where) --> 3. Autoscaling policy (when)
+**Relational Database Service** (RDS)
+- DB instance class and storage
+- private subnet (AZ)
+- Web applications, e-commerce, mobile and online games
 
-     Dynamic autoscaling: Elastic Load Balancing --> CloudWatch --> Autoscaling
+**Lambda** - compute service
+- Event-driven serverless compute
+- pay when code is run
+- Use cases: Automatic backup, event, IOT, serverless websites
 
+**Elastic Beanstalk**
+- PaaS
+- Allows quick deployment of apps
+- Reduce management complexity
+  Just need to have the application code then everything is done for you
+  Choose instance type, db, autoscaling
+  Provides: code, app service, http service, OS, language interpreter, host
 
+**Simple Notification Service** (SNS)
+- pub/sub messaging and mobile communication service
 
-Route 53 (DNS service) - translate a URL to an IP address
-
-     Hosted zone
-
-     Record Set - subdomain creation
-
-     DNS resolution strategies
-
-          Simple Routing, Geo-location, Failover
-
-          Weighted round robin, latency-based, multivalue answer
-
-
-
-Relational Database Service (RDS)
-
-     DB instance class and storage
-
-     private subnet (AZ)
-
-     Web applications, e-commerce, mobile and online games
-
-
-
-Lambda - compute service
-
-     Event-driven serverless compute
-
-     pay when code is run
-
-     Use cases: Automatic backup, event, IOT, serverless websites
-
-
-
-Elastic Beanstalk
-
-PaaS
-Allows quick deployment of apps
-Reduce management complexity
-     Just need to have the application code then everything is done for you
-
-     Choose instance type, db, autoscaling
-
-     Provides: code, app service, http service, OS, language interpreter, host
-
-
-
-Simple Notification Service (SNS)
-
-     pub/sub messaging and mobile communication service
-
-
-
-CloudWatch - monitoring service in real time
-
-     CPU, disk I/O, set alarms, automatically react to changes
-
+**CloudWatch** - monitoring service in real time
+- CPU, disk I/O, set alarms, automatically react to changes
 Metrics
-Alarms - watches a single metric, performs one or more actions
-Events - describe changes in AWS resources
-Logs - in real time - cloud trail logged events
-Dashboard
+- Alarms - watches a single metric, performs one or more actions
+- Events - describe changes in AWS resources
+- Logs - in real time - cloud trail logged events
+- Dashboard
 
+**CloudFront** (CDN) - edge locations
 
-CloudFront (CDN) - edge locations
-
-
-
-Cloud Formation - simplify repeated tasks
-
-     Create, update, delete stacks (environment)
-
-
+**Cloud Formation** - simplify repeated tasks
+- Create, update, delete stacks (environment)
 
 ## 4. Architecture
 Well-architected framework
