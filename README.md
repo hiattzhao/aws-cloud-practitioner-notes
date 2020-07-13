@@ -369,6 +369,6 @@ AWS organizations - automate account creation, groups of accounts, policies
 
 
 
-Links:
+## Useful Links:
 https://digitalcloud.training/certification-training/aws-certified-cloud-practitioner/
 https://github.com/yafeunteun/aws-cloud-practitioner-certification-notes 
