@@ -153,14 +153,12 @@ Metrics
 ## 4. Architecture
 Well-architected framework
 
-5 Design/Pillar principles
-
-Security: IAM, detective controls, infrastructure protection, data protection, incident response
-Reliability: Recover from issues/failures
-Performance efficiency: select, review, monitor, trade-offs
-Cost optimization: cost-effective resources, match supply and demand, increase expenditure awareness, optimize overtime
-Operational excellence: manage/automate change
-
+**5 Design/Pillar principles**
+1. Security: IAM, detective controls, infrastructure protection, data protection, incident response
+2. Reliability: Recover from issues/failures
+3. Performance efficiency: select, review, monitor, trade-offs
+4. Cost optimization: cost-effective resources, match supply and demand, increase expenditure awareness, optimize overtime
+5. Operational excellence: manage/automate change
 
 Fault tolerance - ability to remain operational in case of failure
 
@@ -168,88 +166,55 @@ Simple queue service: messaging system
 Simple storage service (S3): data storage
 RDS relational database service 
 
-
 High availability
 
-     Elastic load balancers - distribute incoming traffic
+Elastic load balancers - distribute incoming traffic
 
 IP address
 Route 53 - DNS service (translate domain names to IP addresses)
 Autoscaling - adjust/modify resources with changes in demand
 CloudWatch - statistic gathering system, used with autoscaling 
 
-
 ## 5. Security
-AWS Cloud HSM - hardware based encryption
+**AWS Cloud HSM** - hardware based encryption
 
-
-
-Shared Responsibility Model
-
+**Shared Responsibility Model**
 You:
-
-User data
-Application
-Guest OS
------------ EC2
+- User data
+- Application
+- Guest OS
+- EC2
 
 AWS:
+- Hypervisor
+- Network - VPC
+- Physical
 
-Hypervisor
-Network - VPC
-Physical
+**Identity and Access Management** (Authentication/Authorization)
+  Policy Docs (permissions)
+  --> Role (temporary)
+  --> User (permanent)
+  --> Group
 
+**Amazon Inspector(**) - security assessment service, produces report, identifies security vulnerabilities
 
-Identity and Access Management (Authentication/Authorization)
+**AWS Shield**:
+- Managed DDoS (Distributed Denial of Service - multiple source, make your app unavailable to users) protection service
 
-     Policy Docs (permissions)
-
-          --> Role (temporary)
-
-          -->User (permanent)      
-
-          --> Group
-
-
-
-Amazon Inspector - security assessment service, produces report, identifies security vulnerabilities
-
-
-
-AWS Shield:
-
-     Managed DDoS (Distributed Denial of Service - multiple source, make your app unavailable to users) protection service
-
-     Standard - free
-
-     Advanced - 24/7 access to DDoS response team (DRT)
-
-
+  Standard - free
+  Advanced - 24/7 access to DDoS response team (DRT)
 
 ## 6. Pricing and Support
 Reserve instances:
-
-     AVRI - All up front (largest discount)
-
-     PVRI - Less up front (more discount)
-
-     NURI - no up front
-
-
+- AURI - All up front (largest discount)
+- PURI - Less up front (more discount)
+- NURI - no up front
 
 Consolidated billing for multiple accounts
-
-
-
-Pay for: compute, storage, outbound data transfer
-
-No charge: Inbound data transfer or AWS services on same region
-
-
+- Pay for: compute, storage, outbound data transfer
+- No charge: Inbound data transfer or AWS services on same region
 
 On demand, reserved, spot (bid)
-
-
 
 EC2 - charge only for capacity used (clock-second/hour billing)
 
@@ -261,34 +226,22 @@ RDS - clock-hour billing, db characteristics, db purchase type - no charge for b
 
 CloudFront - price based on request, data transfer out, varies by region
 
-
-
-Trusted Advisor - checks cost optimization, performance, security, fault tolerance
-
-
+**Trusted Advisor** - checks cost optimization, performance, security, fault tolerance
 
 Support
-
-Proactive guidance - technical account manager (TAM)
-Best practices - trusted advisor
-Account assistance - AWS support concierge - billing and account
-
+- Proactive guidance - technical account manager (TAM)
+- Best practices - trusted advisor
+- Account assistance - AWS support concierge - billing and account
 
 Support plans:
+- Basic
+- Developer
+- Business
+- Enterprise
 
-Basic
-Developer
-Business
-Enterprise
-
-
-AWS Cost Explorer - custom reports analyze usage and costs
-
-Total cost of ownership (TCO) - shows how much it costs to move to AWS instead of on-prem
-
-AWS organizations - automate account creation, groups of accounts, policies 
-
-
+**AWS Cost Explorer** - custom reports analyze usage and costs
+**Total cost of ownership** (TCO) - shows how much it costs to move to AWS instead of on-prem
+**AWS organizations** - automate account creation, groups of accounts, policies 
 
 ## Useful Links:
 https://digitalcloud.training/certification-training/aws-certified-cloud-practitioner/
