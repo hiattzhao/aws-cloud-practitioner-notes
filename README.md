@@ -30,82 +30,64 @@ Cloud: low cost, low risk
 6. Security - continual monitoring, staffed 24/7, multi factor authorization, multi region
 
 ## 2. AWS Core Services
-EC2 - Elastic Compute Cloud
+**EC2** - Elastic Compute Cloud
+Instances - pay as you go, broad selection of hardware/software (server, virtual machine), global hosting 
 
-     Instances - pay as you go, broad selection of hardware/software (server, virtual machine), global hosting 
+Instance types:
+- On Demand - no contract - more $
+- Reserved - contract
+- Spot - bid the price you want to pay, apps with flexible start and stop times
+- Dedicated Hosts - physical EC2, can be on demand or reserved
 
-     Instance types:
+Deploy to one specific region and availability zone
 
-On Demand - no contract - more $
-Reserved - contract
-Spot - bid the price you want to pay, apps with flexible start and stop times
-Dedicated Hosts - physical EC2, can be on demand or reserved
- 
+AMI - Amazon Machine Image - the OS and software
 
-     - Deploy to one specific region and availability zone
+**EBS** - Elastic Block Store - additional storage for EC2
+- HDD and SDD
+- Snapshots - recreate a new volume
+- Encryption
+- Elasticity - HDD <--> SDD, inc/dec volume size
+- On the same availability zone and region as the EC2 instance
 
-     AMI - Amazon Machine Image - the OS and software
-
-
-
-EBS - Elastic Block Store - additional storage for EC2
-
-HDD and SDD
-Snapshots - recreate a new volume
-Encryption
-Elasticity - HDD <--> SDD, inc/dec volume size
-On the same availability zone and region as the EC2 instance
-
-
-S3 - Simple Storage Service
-
-Managed cloud storage service
-Store virtually number of objects
-Access anytime from anywhere
-Rich security controls
-Must be unique names
-
-
-     Create bucket, key in object
+**S3** - Simple Storage Service
+- Managed cloud storage service
+- Store virtually number of objects
+- Access anytime from anywhere
+- Rich security controls
+- Must be unique names
+  
+Create bucket, key in object
 
 IAM policies (allow or deny users)
 S3 bucket policies (allow or deny bucket)
 Per object access - access control list
 
+***Use cases***
+- Store app assets
+- Static webhosting
+- Backup and disaster recovery
+- Staging for big data
 
-     Use cases
+***Access Tiers***
+- Regular (standard)
+- IA (infrequently accessed)
+- Glacier (archival)
+- Intelligent Tiering - 2 tiers (frequent and infrequent)
 
-Store app assets
-Static webhosting
-Backup and disaster recovery
-Staging for big data
+**AWS Global Infrastructure**
+- Regions - 2 or more availability zones, separate regions
+- Availability Zones (AZ) - collection of data centers, physically and logically separate, protected from failures
+- Edge Locations -  CDN (Amazon CloudFront)
 
-
-     Access Tiers
-
-Regular (standard)
-IA (infrequently accessed)
-Glacier (archival)
-Intelligent Tiering - 2 tiers (frequent and infrequent)
-
-
-AWS Global Infrastructure
-
-Regions - 2 or more availability zones, separate regions
-Availability Zones (AZ) - collection of data centers, physically and logically separate, protected from failures
-Edge Locations -  CDN (Amazon CloudFront)
-
-
-Virtual Private Cloud (VPC)
-
-Networking AWS Service
-Lives in a region
-Subnets (span to AZs)
-Route tables
-Internet Gateway
-NAT Gateway
-NACL - Network Access Control List
-
+**Virtual Private Cloud (VPC)**
+- Networking AWS Service
+- Lives in a region
+- Subnets (span to AZs)
+- Route tables
+- Internet Gateway
+- NAT Gateway
+- NACL - Network Access Control List
 
 ## 3. Integrated Services
 Application Load Balancer
