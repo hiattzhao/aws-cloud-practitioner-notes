@@ -2,6 +2,7 @@
 
 ## 1. Introduction
 **AWS Cloud**: on demand delivery of IT through the internet
+
 **Global infrastructure** -> Region, Availability Zones, Edge Locations (end points for AWS - cache contents)
 
 AWS Interfaces (references the AWS API):
@@ -196,7 +197,7 @@ AWS:
   --> User (permanent)
   --> Group
 
-**Amazon Inspector(**) - security assessment service, produces report, identifies security vulnerabilities
+**Amazon Inspector** - security assessment service, produces report, identifies security vulnerabilities
 
 **AWS Shield**:
 - Managed DDoS (Distributed Denial of Service - multiple source, make your app unavailable to users) protection service
@@ -243,7 +244,10 @@ Support plans:
 
 **Total cost of ownership** (TCO) - shows how much it costs to move to AWS instead of on-prem
 
-**AWS organizations** - automate account creation, groups of accounts, policies 
+**AWS Organizations** - helps you to centrally manage billing; control access, compliance, and security; and share resources across your AWS accounts.
+
+**AWS Budgets** -  gives you the ability to set custom budgets that alert you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount.
+
 
 ## Useful Links:
 https://digitalcloud.training/certification-training/aws-certified-cloud-practitioner/
